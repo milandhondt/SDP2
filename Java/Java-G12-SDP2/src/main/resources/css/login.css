@@ -1,0 +1,72 @@
+/* TODO terug dit wegdoen RODE KLEUR VAN DELAWARE EF463C */
+
+
+.login-form {
+	-fx-background-color: #D9D9D9;
+    -fx-border-radius: 6.0;
+    -fx-background-radius: 6.0;
+    -fx-padding: 40;
+    -fx-effect: dropshadow(three-pass-box, rgba(0.0,0.0,0.0,0.1), 10.0, 0.0, 0.0, 5.0);
+}
+
+
+.welcome-label {
+    -fx-font-size: 32.0px;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+
+.info-description {
+ 	-fx-font-style: italic;	
+}
+
+
+.login-label {
+    -fx-font-size: 14.0px;
+    -fx-text-fill: #333;
+    -fx-font-weight: bold;
+}
+
+
+.login-field {
+    -fx-pref-width: 280.0;
+    -fx-font-size: 14.0px;
+    -fx-padding: 8.0 10.0 8.0 10.0;
+    -fx-background-radius: 3.0;
+    -fx-border-radius: 3.0;
+    -fx-border-color: #dcdfe3;
+    -fx-background-color: #f9f9f9;
+    -fx-border-width: 1.0;
+}
+
+
+.login-button {
+    -fx-background-color: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 16.0px;
+    -fx-padding: 10.0 18.0;
+    -fx-background-radius: 3.0;
+    -fx-border-radius: 3.0;
+    -fx-cursor: hand;
+}
+.login-button:hover {
+    -fx-background-color: #EF463C;
+}
+
+
+.login-image {
+    -fx-background-image: url('/images/login_groepsfoto.jpg');
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 12.0, 0.0, 0.0, 6.0);
+}
+
+
+.error-label {
+    -fx-text-fill: red;
+    -fx-padding: 5 0 0 0;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}

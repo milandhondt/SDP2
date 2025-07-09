@@ -1,0 +1,87 @@
+
+.header-label {
+    -fx-font-weight: bold;
+    -fx-font-size: 24px;
+    -fx-text-alignment: center;
+    -fx-padding: 15px 0;
+    -fx-text-fill: #333;
+}
+
+
+.form-box {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+    -fx-background-radius: 10px;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-spacing: 15px;
+    -fx-padding: 25px;
+}
+
+
+.content-container {
+    -fx-spacing: 15px;
+    -fx-padding: 20px;
+}
+
+
+.form-label {
+    -fx-font-weight: bold;
+    -fx-min-width: 150px;
+}
+
+
+.form-field-container {
+    -fx-spacing: 10px;
+    -fx-alignment: center-left;
+    -fx-padding: 5px 0;
+}
+
+
+.text-field,
+.text-area,
+.combo-box,
+.date-picker {
+    -fx-background-radius: 4px;
+    -fx-border-radius: 4px;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+}
+
+.text-field:focused,
+.text-area:focused,
+.combo-box:focused,
+.date-picker:focused {
+    -fx-border-color: #ba68f1;
+}
+
+
+.date-picker .arrow-button {
+    -fx-background-color: #f5f5f5;
+    -fx-border-color: transparent;
+}
+
+.date-picker .arrow-button:hover {
+    -fx-background-color: #eeeeee;
+}
+
+
+.create-report-button {
+    -fx-background-color: #ba68f1;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 30px;
+    -fx-background-radius: 5px;
+}
+
+.create-report-button:hover {
+    -fx-background-color: #a047d8;
+}
+
+
+.back-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #333;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+}

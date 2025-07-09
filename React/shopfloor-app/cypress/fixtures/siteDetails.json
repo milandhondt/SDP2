@@ -1,0 +1,41 @@
+{
+  "id": 1,
+      "sitename": "Site A",
+      "verantwoordelijke": {
+        "id": 1,
+        "lastname": "Janssen",
+        "firstname": "Jan",
+        "email": "janJanssen@example.com"
+      },
+      "status": "ACTIEF",
+      "machines": [
+        {
+          "id": 1,
+          "code": "MACHINE_A",
+          "location": "Warehouse",
+          "productinfo": "Machine A is een machine die ...",
+          "machinestatus": "DRAAIT",
+          "productionstatus": "GEZOND",
+          "technieker": {
+            "id": 2,
+            "lastname": "Peeters",
+            "firstname": "Piet",
+            "email": "pietPeeters@example.com"
+          }
+        },
+        {
+          "id": 2,
+          "code": "MACHINE_B",
+          "location": "Factory Floor",
+          "productinfo": "Machine B is een machine die ...",
+          "machinestatus": "MANUEEL_GESTOPT",
+          "productionstatus": "FALEND",
+          "technieker": {
+            "id": 3,
+            "lastname": "Dubois",
+            "firstname": "Marie",
+            "email": "MarieDubois@example.com"
+          }
+        }
+      ]
+}

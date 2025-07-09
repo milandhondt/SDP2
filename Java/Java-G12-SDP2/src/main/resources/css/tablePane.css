@@ -1,0 +1,24 @@
+.title-label {
+	-fx-font: 40 arial;
+}
+
+.back-button {
+	-fx-background-color: transparent; 
+	-fx-padding: 0;
+}
+
+.add-button {
+	-fx-background-color: #f0453c; 
+	-fx-text-fill: white; 
+	-fx-font-weight: bold;
+	-fx-padding: 8 15 8 15;
+	-fx-background-radius: 5;
+}
+
+.back-button:hover {
+	-fx-cursor: hand
+}
+
+.add-button:hover {
+	-fx-cursor: hand
+}

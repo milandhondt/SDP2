@@ -1,0 +1,93 @@
+{
+  "users": {
+    "items": [
+      {
+        "id": 1,
+        "lastname": "Jansen",
+        "firstname": "Pieter",
+        "birthdate": "1985-06-15T00:00:00Z",
+        "email": "pieter.jansen@example.com",
+        "password": "hashedpassword123",
+        "phonenumber": "+31612345678",
+        "role": "VERANTWOORDELIJKE",
+        "status": "ACTIEF",
+        "adres": {
+          "street": "Kerkstraat",
+          "number": "1",
+          "postalcode": "1000",
+          "city": "Brussel",
+          "land": "België"
+        }
+      },
+      {
+        "id": 2,
+        "lastname": "De Vries",
+        "firstname": "Emma",
+        "birthdate": "1990-08-22T00:00:00Z",
+        "email": "emma.devries@example.com",
+        "password": "hashedpassword456",
+        "phonenumber": "+31687654321",
+        "role": "VERANTWOORDELIJKE",
+        "status": "INACTIEF",
+        "adres": {
+          "street": "Kerkstraat",
+          "number": "1",
+          "postalcode": "1000",
+          "city": "Brussel",
+          "land": "België"
+        }
+      }
+    ]
+  },
+  "machines": {
+    "items": [
+      {
+        "id": 1,
+        "machinestatus": "ACTIEF",
+        "location": "Locatie 1",
+        "code": "A001"
+      },
+      {
+        "id": 2,
+        "machinestatus": "INACTIEF",
+        "location": "Locatie 2",
+        "code": "B001"
+      }
+    ]
+  },
+  "sites": {
+    "items": [
+      {
+        "id": 1,
+        "sitename": "Test Site",
+        "verantwoordelijke_id": 1, 
+        "status": "ACTIEF",
+        "machines": [
+          {
+            "id": 1,
+            "machinestatus": "ACTIEF",
+            "location": "Locatie 1",
+            "code": "A001"
+          },
+          {
+            "id": 2,
+            "machinestatus": "INACTIEF",
+            "location": "Locatie 2",
+            "code": "B001"
+          }
+        ],
+        "verantwoordelijke": {
+         "id": 1,
+        "lastname": "Jansen",
+        "firstname": "Pieter",
+        "birthdate": "1985-06-15T00:00:00Z",
+        "email": "pieter.jansen@example.com",
+        "password": "hashedpassword123",
+        "phonenumber": "+31612345678",
+        "role": "VERANTWOORDELIJKE",
+        "status": "ACTIEF"
+        }
+      }
+    ]
+  }
+}

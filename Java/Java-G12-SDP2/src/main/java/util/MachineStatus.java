@@ -1,0 +1,6 @@
+package util;
+
+public enum MachineStatus
+{
+	DRAAIT, MANUEEL_GESTOPT, AUTOMATISCH_GESTOPT, STARTBAAR, IN_ONDERHOUD
+}

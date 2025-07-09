@@ -1,0 +1,172 @@
+{
+  "items" : [
+  {
+    "id": 1,
+    "code": "978-1-108-63256-0",
+    "machinestatus": "DRAAIT",
+    "lastmaintenance": "2025-03-24T18:03:29.302Z",
+    "aantal_goede_producten": 612,
+    "aantal_slechte_producten": 291,
+    "limiet_voor_onderhoud": 5309,
+    "location": "Alysson Road",
+    "productionstatus": "GEZOND",
+    "technieker": {
+      "id": 99,
+      "firstname": "Jodie",
+      "lastname": "Cormier"
+    },
+    "site": {
+      "id": 50,
+      "sitename": "Carter, Corkery and Witting",
+      "verantwoordelijke": {
+        "id": 53,
+        "address_id": 7,
+        "lastname": "Roberts",
+        "firstname": "Kimberly",
+        "birthdate": "1999-07-09T18:58:19.000Z",
+        "email": "Kimberly.Roberts@yahoo.com",
+        "password": "$argon2id$v=19$m=131072,t=6,p=4$zyZXtTf5Vi/zRqnkk+UF9Q$dy4NjjW6scxL5lGuFKMl/bkf6tPYY/C6T9w0foTIBAo",
+        "phonenumber": "(630) 654-1571",
+        "role": "VERANTWOORDELIJKE",
+        "status": "ACTIEF"
+      }
+    },
+    "product_naam": "Shirt",
+    "productinfo": "Innovative Chair featuring frequent technology and Marble construction",
+    "onderhouden": [
+      {
+        "id": 52,
+        "machine_id": 1,
+        "executiondate": "2025-04-26T23:25:57.000Z",
+        "startdate": "2025-03-15T01:51:09.000Z",
+        "enddate": "2026-01-31T09:34:57.000Z",
+        "reason": "Temperantia iste claro tempus chirographum ocer censura civitas.",
+        "status": "VOLTOOID",
+        "comments": "Praesentium cupio vallum aspicio sonitus decipio pecco sint cunabula. Toties cui talio. Autem accendo ter magnam deripio modi repellendus desparatus cubo doloribus.",
+        "technieker": {
+          "id": 99,
+          "firstname": "Jodie",
+          "lastname": "Cormier"
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "code": "978-1-78084-721-4",
+    "machinestatus": "MANUEEL_GESTOPT",
+    "status_sinds": "2025-03-24T18:08:04.038Z",
+    "aantal_goede_producten": 562,
+    "aantal_slechte_producten": 527,
+    "limiet_voor_onderhoud": 1380,
+    "location": "Wehner Lights",
+    "productionstatus": "FALEND",
+    "technieker": {
+      "id": 15,
+      "firstname": "Kyla",
+      "lastname": "Jast"
+    },
+    "site": {
+      "id": 2,
+      "sitename": "Lowe Group",
+      "verantwoordelijke": {
+        "id": 41,
+        "address_id": 60,
+        "lastname": "Nolan",
+        "firstname": "Chaz",
+        "birthdate": "1963-04-20T08:02:28.000Z",
+        "email": "Chaz_Nolan@gmail.com",
+        "password": "$argon2id$v=19$m=131072,t=6,p=4$EDG+1nas2UCnfGwTmO0fig$q+6xZwchmGkK5CsOdsnQYGTX/H4Hst4Xy0E/ThOBMhU",
+        "phonenumber": "(762) 880-0371 x84028",
+        "role": "VERANTWOORDELIJKE",
+        "status": "ACTIEF"
+      }
+    },
+    "product_naam": "Cheese",
+    "productinfo": "The Nichole Ball is the latest in a series of elementary products from Greenholt Group",
+    "onderhouden": [
+      {
+        "id": 14,
+        "machine_id": 2,
+        "executiondate": "2024-06-09T03:36:46.000Z",
+        "startdate": "2024-07-15T14:32:00.000Z",
+        "enddate": "2025-07-16T21:45:07.000Z",
+        "reason": "Odit sordeo utrimque calcar.",
+        "status": "IN_UITVOERING",
+        "comments": "Super laborum tremo collum adopto atrox. Debeo vomica quod uterque quod. Chirographum colligo cognatus arguo vorax altus amissio arma.",
+        "technieker": {
+          "id": 57,
+          "firstname": "Forrest",
+          "lastname": "Yundt"
+        }
+      },
+      {
+        "id": 38,
+        "machine_id": 2,
+        "executiondate": "2024-06-11T16:42:18.000Z",
+        "startdate": "2024-05-19T17:26:58.000Z",
+        "enddate": "2026-03-13T05:57:53.000Z",
+        "reason": "Vetus advenio aranea amor carbo adamo pauci clarus veniam.",
+        "status": "IN_UITVOERING",
+        "comments": "Abeo studio summisse esse sodalitas comis valetudo cogo vilis. Capio quibusdam acsi aut. Conduco laboriosam umquam vinitor arceo curso verecundia vulariter tenax ipsam.",
+        "technieker": {
+          "id": 93,
+          "firstname": "Arianna",
+          "lastname": "Denesik-Morar"
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "code": "978-0-568-18893-8",
+    "machinestatus": "IN_ONDERHOUD",
+    "lastmaintenance": "2025-03-17T18:23:14.466Z",
+    "aantal_goede_producten": 396,
+    "aantal_slechte_producten": 998,
+    "limiet_voor_onderhoud": 8701,
+    "location": "Shanahan Pass",
+    "productionstatus": "GEZOND",
+    "technieker": {
+      "id": 45,
+      "firstname": "Haven",
+      "lastname": "Kessler"
+    },
+    "site": {
+      "id": 12,
+      "sitename": "Tremblay, Donnelly and Kovacek",
+      "verantwoordelijke": {
+        "id": 19,
+        "address_id": 84,
+        "lastname": "Kautzer",
+        "firstname": "Vaughn",
+        "birthdate": "1995-11-12T07:36:49.000Z",
+        "email": "Vaughn.Kautzer@yahoo.com",
+        "password": "$argon2id$v=19$m=131072,t=6,p=4$U+PoMbWa/R1AGBGQiDK+IQ$SfvfREesHGkK8mDTW3YyvaN60AOAWAg0xJXhpAcC30g",
+        "phonenumber": "630-484-2799",
+        "rol": "VERANTWOORDELIJKE",
+        "status": "ACTIEF"
+      }
+    },
+    "product_naam": "Chair",
+    "productinfo": "Discover the infatuated new Keyboard with an exciting mix of Steel ingredients",
+    "onderhouden": [
+      {
+        "id": 75,
+        "machine_id": 3,
+        "executiondate": "2025-09-20T05:00:22.000Z",
+        "startdate": "2024-11-03T07:28:42.000Z",
+        "enddate": "2025-08-19T01:45:21.000Z",
+        "reason": "Ulciscor auxilium demergo delinquo accommodo debeo casso.",
+        "status": "IN_UITVOERING",
+        "comments": "Vorax clementia celo. Abundans caste quae decumbo. Calculus custodia tepidus coniecto congregatio iste adflicto sonitus ullus.",
+        "technieker": {
+          "id": 5,
+          "firstname": "David",
+          "lastname": "Williams"
+        }
+      }
+    ]
+  }
+]
+}

@@ -1,0 +1,104 @@
+/* Main pane styles */
+.main-pane {
+    /* Background image is set in Java code */
+}
+
+
+.error-label {
+    -fx-text-fill: red;
+    -fx-font-size: 12.0px;
+    -fx-padding: 2.0px 0.0px 0.0px 0.0px;
+}
+
+
+.header-label {
+    -fx-font-weight: bold;
+    -fx-font-size: 24.0px;
+    -fx-text-align: center;
+    -fx-padding: 15.0px 0.0px;
+    -fx-text-fill: #333;
+}
+
+
+.form-box {
+    -fx-background-color: rgba(255.0, 255.0, 255.0, 0.9);
+    -fx-background-radius: 10.0px;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 10.0px;
+    -fx-border-width: 1.0px;
+    -fx-spacing: 15.0px;
+    -fx-padding: 25.0px;
+}
+
+
+.content-container {
+    -fx-spacing: 15.0px;
+    -fx-padding: 20.0px;
+}
+
+
+.form-label {
+    -fx-font-weight: bold;
+    -fx-min-width: 120.0px;
+}
+
+
+.section-label {
+    -fx-font-weight: bold;
+    -fx-font-size: 16.0px;
+    -fx-padding: 5.0px 0.0px 10.0px 0.0px;
+    -fx-text-fill: #333333;
+}
+
+
+.info-value {
+    -fx-text-fill: #333333;
+}
+
+
+.form-field-container {
+    -fx-spacing: 10.0px;
+    -fx-alignment: center-left;
+    -fx-padding: 3.0px 0.0px;
+}
+
+
+.date-time-box {
+    -fx-spacing: 15.0px;
+    -fx-alignment: center-left;
+}
+
+
+.create-report-button {
+    -fx-background-color: #ba68f1;
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+    -fx-padding: 10.0px 30.0px;
+}
+
+.create-report-button:hover {
+    -fx-background-color: #a047d8;
+}
+
+
+.text-field, .text-area, .combo-box, .date-picker {
+    -fx-background-radius: 4.0px;
+    -fx-border-radius: 4.0px;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1.0px;
+}
+
+.text-field:focused, .text-area:focused, .combo-box:focused, .date-picker:focused {
+    -fx-border-color: #ba68f1;
+}
+
+
+.date-picker .arrow-button {
+    -fx-background-color: #f5f5f5;
+    -fx-border-color: transparent;
+}
+
+.date-picker .arrow-button:hover {
+    -fx-background-color: #eeeeee;
+}
+

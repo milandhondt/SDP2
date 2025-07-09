@@ -1,0 +1,121 @@
+{
+  "machines": [
+    {
+      "id": 1,
+      "code": "978-1-108-63256-0",
+      "machinestatus": "DRAAIT",
+      "lastmaintenance": "2024-12-08T17:35:53.947Z",
+      "aantal_goede_producten": 566,
+      "aantal_slechte_producten": 966,
+      "limiet_voor_onderhoud": 15271,
+      "location": "Alysson Road",
+      "productionstatus": "FALEND",
+      "technieker": {
+          "id": 99,
+          "firstname": "Kellen",
+          "lastname": "Mueller"
+      },
+      "site": {
+          "id": 50,
+          "sitename": "Hartmann, Champlin and D'Amore",
+          "verantwoordelijke": {
+              "id": 43,
+              "address_id": 45,
+              "lastname": "Schumm",
+              "firstname": "Freddy",
+              "birthdate": "1944-06-19T13:40:42.000Z",
+              "email": "Freddy_Schumm98@gmail.com",
+              "password": "$argon2id$v=19$m=131072,t=6,p=4$n5AOy5JXlxX+dQACFCPr0g$UwNsrqhUdMhlt5yK3XPInxVgvwkb7UY09qpqnN7XoFo",
+              "phonenumber": "396.754.0247 x132",
+              "role": "VERANTWOORDELIJKE",
+              "status": "ACTIEF"
+          }
+      },
+      "product_naam": "Shirt",
+      "productinfo": "Innovative Chair featuring frequent technology and Marble construction",
+      "onderhouden": [
+          {
+              "id": 95,
+              "machine_id": 1,
+              "executiondate": "2025-11-13T01:25:29.000Z",
+              "startdate": "2024-06-21T19:00:11.000Z",
+              "enddate": "2025-11-14T13:10:34.000Z",
+              "reason": "Degero caritas vomica quidem cogo amplus conscendo.",
+              "status": "VOLTOOID",
+              "comments": "Itaque coepi unde cubo tergeo tametsi creator aureus. Attollo conicio adimpleo amplitudo agnosco ater. Blandior conitor illo virgo adaugeo ubi tamen vulgaris cernuus iusto.",
+              "technieker": {
+                  "id": 33,
+                  "firstname": "Alessia",
+                  "lastname": "Gerlach"
+              }
+          }
+      ]
+    },
+    {
+      "id": 2,
+      "code": "978-1-78084-721-4",
+      "machinestatus": "MANUEEL_GESTOPT",
+      "lastmaintenance": "2024-10-21T07:55:27.615Z",
+      "aantal_goede_producten": 562,
+      "aantal_slechte_producten": 527,
+      "limiet_voor_onderhoud": 1380,
+      "location": "Wehner Lights",
+      "productionstatus": "FALEND",
+      "technieker": {
+          "id": 15,
+          "firstname": "Kyla",
+          "lastname": "Jast"
+      },
+      "site": {
+          "id": 2,
+          "sitename": "Lowe Group",
+          "verantwoordelijke": {
+              "id": 41,
+              "address_id": 60,
+              "lastname": "Nolan",
+              "firstname": "Chaz",
+              "birthdate": "1963-04-20T08:02:28.000Z",
+              "email": "Chaz_Nolan@gmail.com",
+              "password": "$argon2id$v=19$m=131072,t=6,p=4$EDG+1nas2UCnfGwTmO0fig$q+6xZwchmGkK5CsOdsnQYGTX/H4Hst4Xy0E/ThOBMhU",
+              "phonenumber": "(762) 880-0371 x84028",
+              "role": "VERANTWOORDELIJKE",
+              "status": "ACTIEF"
+          }
+      },
+      "product_naam": "Cheese",
+      "productinfo": "The Nichole Ball is the latest in a series of elementary products from Greenholt Group",
+      "onderhouden": [
+          {
+              "id": 14,
+              "machine_id": 2,
+              "executiondate": "2024-06-09T03:36:46.000Z",
+              "startdate": "2024-07-15T14:32:00.000Z",
+              "enddate": "2025-07-16T21:45:07.000Z",
+              "reason": "Odit sordeo utrimque calcar.",
+              "status": "IN_UITVOERING",
+              "comments": "Super laborum tremo collum adopto atrox. Debeo vomica quod uterque quod. Chirographum colligo cognatus arguo vorax altus amissio arma.",
+              "technieker": {
+                  "id": 57,
+                  "firstname": "Forrest",
+                  "lastname": "Yundt"
+              }
+          },
+          {
+              "id": 38,
+              "machine_id": 2,
+              "executiondate": "2024-06-11T16:42:18.000Z",
+              "startdate": "2024-05-19T17:26:58.000Z",
+              "enddate": "2026-03-13T05:57:53.000Z",
+              "reason": "Vetus advenio aranea amor carbo adamo pauci clarus veniam.",
+              "status": "IN_UITVOERING",
+              "comments": "Abeo studio summisse esse sodalitas comis valetudo cogo vilis. Capio quibusdam acsi aut. Conduco laboriosam umquam vinitor arceo curso verecundia vulariter tenax ipsam.",
+              "technieker": {
+                  "id": 93,
+                  "firstname": "Arianna",
+                  "lastname": "Denesik-Morar"
+              }
+          }
+      ]
+    }
+  ]
+}

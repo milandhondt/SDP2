@@ -1,0 +1,204 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Adres {
+  id         Int         @id @default(autoincrement()) @db.UnsignedInt
+  street     String      @db.VarChar(255)
+  number     String      @db.VarChar(50)
+  city       String      @db.VarChar(100)
+  postalcode String      @db.VarChar(10)
+  land       String?     @db.VarChar(255)
+  gebruikers Gebruiker[]
+
+  @@map("addresses")
+}
+
+model Gebruiker {
+  id          Int         @id @default(autoincrement()) @db.UnsignedInt
+  address_id  Int         @db.UnsignedInt
+  lastname    String      @db.VarChar(255)
+  firstname   String      @db.VarChar(255)
+  birthdate   DateTime    @db.DateTime(0)
+  email       String      @unique @db.VarChar(255)
+  password    String      @db.VarChar(255)
+  phonenumber String      @db.VarChar(255)
+  role        String      @db.LongText
+  status      Status
+  Dashboard   Dashboard[]
+  adres       Adres       @relation(fields: [address_id], references: [id], onDelete: NoAction, map: "fk_adres_gebruiker")
+  machines    Machine[]
+  onderhouden Onderhoud[]
+  sites       Site[]
+
+  @@index([address_id], map: "fk_adres_gebruiker")
+  @@map("users")
+  Report Report[]
+}
+
+model KPI {
+  id         Int         @id @default(autoincrement()) @db.UnsignedInt
+  onderwerp  String
+  roles      Json
+  grafiek    Grafiek
+  dashboards Dashboard[]
+  kpiwaarden KPIWaarde[]
+
+  @@map("kpis")
+}
+
+model KPIWaarde {
+  id      Int      @id @default(autoincrement()) @db.UnsignedInt
+  datum   DateTime
+  waarde  Json
+  site_id String?  @db.VarChar(50)
+  kpi_id  Int      @db.UnsignedInt
+  kpi     KPI      @relation(fields: [kpi_id], references: [id])
+
+  @@unique([kpi_id, datum, site_id])
+  @@map("kpiwaarden")
+}
+
+model Dashboard {
+  id           Int       @id @default(autoincrement()) @db.UnsignedInt
+  gebruiker_id Int       @db.UnsignedInt
+  kpi_id       Int       @db.UnsignedInt
+  kpi          KPI       @relation(fields: [kpi_id], references: [id], onDelete: Cascade)
+  gebruiker    Gebruiker @relation(fields: [gebruiker_id], references: [id], onDelete: Cascade, map: "fk_gebruiker_dashboard")
+
+  @@index([kpi_id], map: "dashboards_kpi_id_fkey")
+  @@index([gebruiker_id], map: "fk_gebruiker_dashboard")
+  @@map("dashboards")
+}
+
+model Site {
+  id                   Int       @id @default(autoincrement()) @db.UnsignedInt
+  sitename             String    @db.VarChar(255)
+  verantwoordelijke_id Int       @db.UnsignedInt
+  status               Status
+  machines             Machine[]
+  verantwoordelijke    Gebruiker @relation(fields: [verantwoordelijke_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "fk_gebruiker_site")
+  address_id           Int?      @db.UnsignedInt
+
+  @@index([verantwoordelijke_id], map: "fk_gebruiker_site")
+  @@map("sites")
+  Report Report[]
+}
+
+model Machine {
+  id                             Int              @id @default(autoincrement()) @db.UnsignedInt
+  code                           String           @db.VarChar(255)
+  location                       String           @db.VarChar(255)
+  machinestatus                  Machine_Status
+  lastmaintenance                DateTime?
+  futuremaintenance              DateTime?
+  productionstatus               Productie_Status
+  aantal_goede_producten         Int?             @db.UnsignedInt
+  aantal_slechte_producten       Int?             @db.UnsignedInt
+  limiet_voor_onderhoud          Int?             @db.UnsignedInt
+  product_naam                   String?          @db.VarChar(255)
+  productinfo                    String           @db.LongText
+  numberdayssincelastmaintenance Int?             @db.UnsignedInt
+
+  technician_id Int @db.UnsignedInt
+  site_id       Int @db.UnsignedInt
+
+  technieker  Gebruiker   @relation(fields: [technician_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "fk_gebruiker_machine")
+  site        Site        @relation(fields: [site_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "fk_site_machine")
+  onderhouden Onderhoud[]
+
+  @@index([technician_id], map: "fk_gebruiker_machine")
+  @@index([site_id], map: "fk_site_machine")
+  @@map("machines")
+}
+
+model Onderhoud {
+  id            Int              @id @default(autoincrement()) @db.UnsignedInt
+  machine_id    Int              @db.UnsignedInt
+  technician_id Int              @db.UnsignedInt
+  executiondate DateTime         @db.DateTime(0)
+  startdate     DateTime         @db.DateTime(0)
+  enddate       DateTime         @db.DateTime(0)
+  reason        String           @db.VarChar(255)
+  status        Onderhoud_Status
+  comments      String           @db.VarChar(255)
+  technieker    Gebruiker        @relation(fields: [technician_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "fk_gebruiker_onderhoud")
+  machine       Machine          @relation(fields: [machine_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "fk_machine_onderhoud")
+
+  @@index([technician_id], map: "fk_gebruiker_onderhoud")
+  @@index([machine_id], map: "fk_machine_onderhoud")
+  @@map("maintenances")
+  Report Report[]
+}
+
+model Report {
+  reportId     Int       @id @default(autoincrement()) @db.UnsignedInt @map("REPORTID")
+  site_id      Int       @db.UnsignedInt
+  maintenance_id Int     @db.UnsignedInt
+  technician_id Int      @db.UnsignedInt
+  startDate    DateTime
+  startTime    String
+  endDate      DateTime
+  endTime      String
+  reason       String
+  remarks      String?
+  
+  site         Site      @relation(fields: [site_id], references: [id])
+  maintenance  Onderhoud @relation(fields: [maintenance_id], references: [id])
+  technician   Gebruiker @relation(fields: [technician_id], references: [id])
+
+  @@map("REPORT")
+}
+
+model Notificatie {
+  id      Int      @id @default(autoincrement()) @db.UnsignedInt
+  time    DateTime @default(now())
+  message String   @db.VarChar(510)
+  isread  Boolean  @default(false)
+
+  @@map("notification")
+}
+
+enum Status {
+  ACTIEF
+  INACTIEF
+}
+
+enum Machine_Status {
+  DRAAIT
+  MANUEEL_GESTOPT
+  AUTOMATISCH_GESTOPT
+  IN_ONDERHOUD
+  STARTBAAR
+}
+
+enum Productie_Status {
+  GEZOND
+  NOOD_ONDERHOUD
+  FALEND
+}
+
+enum Onderhoud_Status {
+  VOLTOOID
+  IN_UITVOERING
+  INGEPLAND
+}
+
+enum Grafiek {
+  LINE
+  BARHOOGLAAG
+  BARLAAGHOOG
+  SINGLE
+  LIST
+  TOP5
+  SITES
+  TOP5OND
+  AANKOND
+  GEZONDHEID
+  MACHLIST
+}

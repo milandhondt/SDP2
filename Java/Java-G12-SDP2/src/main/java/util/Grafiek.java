@@ -1,0 +1,6 @@
+package util;
+
+public enum Grafiek
+{
+	GEZONDHEID, SITES, BARHOOGLAAG, BARLAAGHOOG, TOP5, AANKOND, TOP5OND, SINGLE, MACHLIST;
+}

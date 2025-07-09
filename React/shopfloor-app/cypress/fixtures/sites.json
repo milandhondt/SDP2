@@ -1,0 +1,125 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "sitename": "Site A",
+      "verantwoordelijke": {
+        "id": 1,
+        "lastname": "Janssen",
+        "firstname": "Jan",
+        "email": "janJanssen@example.com"
+      },
+      "status": "ACTIEF",
+      "machines": [
+        {
+          "id": 1,
+          "code": "MACHINE_A",
+          "location": "Warehouse",
+          "productinfo": "Machine A is een machine die ...",
+          "machinestatus": "DRAAIT",
+          "productionstatus": "GEZOND",
+          "technieker": {
+            "id": 2,
+            "lastname": "Peeters",
+            "firstname": "Piet",
+            "email": "pietPeeters@example.com"
+          }
+        },
+        {
+          "id": 2,
+          "code": "MACHINE_B",
+          "location": "Factory Floor",
+          "productinfo": "Machine B is een machine die ...",
+          "machinestatus": "MANUEEL_GESTOPT",
+          "productionstatus": "FALEND",
+          "technieker": {
+            "id": 3,
+            "lastname": "Dubois",
+            "firstname": "Marie",
+            "email": "MarieDubois@example.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "sitename": "Site B",
+      "verantwoordelijke": {
+        "id": 2,
+        "lastname": "Peeters",
+        "firstname": "Piet",
+        "email": "pietPeeters@example.com"
+      },
+      "status": "INACTIEF",
+      "machines": [
+        {
+          "id": 3,
+          "code": "MACHINE_C",
+          "location": "Production Line 1",
+          "productinfo": "Machine C is een high-speed productielijn ...",
+          "machinestatus": "AUTOMATISCH_GESTOPT",
+          "productionstatus": "NOOD_ONDERHOUD",
+          "technieker": {
+            "id": 1,
+            "lastname": "Janssen",
+            "firstname": "Jan",
+            "email": "janJanssen@example.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "sitename": "Site C",
+      "verantwoordelijke": {
+        "id": 3,
+        "lastname": "Dubois",
+        "firstname": "Marie",
+        "email": "MarieDubois@example.com"
+      },
+      "status": "ACTIEF",
+      "machines": [
+        {
+          "id": 4,
+          "code": "MACHINE_D",
+          "location": "Assembly Line",
+          "productinfo": "Machine D is een assemblagemachine voor ...",
+          "machinestatus": "DRAAIT",
+          "productionstatus": "GEZOND",
+          "technieker": {
+            "id": 2,
+            "lastname": "Peeters",
+            "firstname": "Piet",
+            "email": "pietPeeters@example.com"
+          }
+        }
+      ]
+    }
+  ],
+  "gebruikers": [
+    {
+      "id": 1,
+      "lastname": "Janssen",
+      "firstname": "Jan",
+      "email": "janJanssen@example.com",
+      "phonenumber": "0478123456",
+      "role": "Admin"
+    },
+    {
+      "id": 2,
+      "lastname": "Peeters",
+      "firstname": "Piet",
+      "email": "pietPeeters@example.com",
+      "phonenumber": "0478234567",
+      "role": "Technieker"
+    },
+    {
+      "id": 3,
+      "lastname": "Dubois",
+      "firstname": "Marie",
+      "email": "MarieDubois@example.com",
+      "phonenumber": "0478345678",
+      "role": "Manager"
+    }
+  ]
+}
