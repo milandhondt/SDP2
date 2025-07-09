@@ -17,7 +17,10 @@ Gebruikers worden ingedeeld in rollen, elk met specifieke rechten en verantwoord
 - Sijad Walipoor [sijad.walipoor@student.hogent.be](mailto:sijad.walipoor@student.hogent.be)
 - Dylan De Man [dylan.deman@student.hogent.be](mailto:dylan.deman@student.hogent.be) 
 
+--- 
+
 Het project bestaat uit 2 delen:
+
 Web applicatie:
 - **React frontend**
 - **Node.js backend**
