@@ -7,7 +7,7 @@
 
 ## Over het project
 
-**SDP2** is een shopfloor applicatie ontwikkeld in teamverband binnen het vak *Software Development Project 2*. De applicatie ondersteunt het beheer van sites, machines, gebruikers, onderhouden en rapporten in een productieomgeving.  
+**SDP2** is een shopfloor applicatie ontwikkeld in teamverband binnen het vak *Software Development Project 2*. De applicatie ondersteunt onder andere het beheer van sites, machines, gebruikers, onderhouden en rapporten in een productieomgeving.  
 
 Gebruikers worden ingedeeld in rollen, elk met specifieke rechten en verantwoordelijkheden. Er is ook functionaliteit voorzien voor bv. het genereren van PDF-rapporten.
 
